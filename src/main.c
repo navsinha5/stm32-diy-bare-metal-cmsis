@@ -5,6 +5,10 @@
 
 
 int main(void){
+    /* set HSE as system clock source */
+    RCC->CR |= RCC_CR_HSEON;
+    RCC->CFGR |= RCC_CFGR_SW_HSE;
+
     initUsart();
     ledInit();
     tim1Init();

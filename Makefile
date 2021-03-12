@@ -44,4 +44,4 @@ clean:
 
 load:
 	# openocd -f interface/stlink-v2.cfg -f target/stm32f1x.cfg -c "program build/bluepill.elf verify reset exit"
-	stm32flash -g 0x08000000 -b 115200 -w build/bluepill.bin COM7
+	stm32flash -g 0x08000000 -b 115200 -w build/bluepill.bin COM8
